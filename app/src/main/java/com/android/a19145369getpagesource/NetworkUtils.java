@@ -56,6 +56,7 @@ public class NetworkUtils {
 
         }catch (IOException e){
             e.printStackTrace();
+            Log.d("Error", e.toString());
         }
         finally {
             if (httpURLConnection != null){

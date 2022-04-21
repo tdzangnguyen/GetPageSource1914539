@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             spinner.setAdapter(adapter);
         }
 
-        if (getSupportLoaderManager().getLoader(0) != null) {
+        if (getSupportLoaderManager() != null && getSupportLoaderManager().getLoader(0) != null) {
             getSupportLoaderManager().initLoader(0, null, this);
         }
     }
